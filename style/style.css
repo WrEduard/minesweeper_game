@@ -1,0 +1,77 @@
+html {
+	font-size: 18px;
+}
+.content-wrapper {
+	max-width: 80%;
+	margin: 0 auto;
+}
+p {
+	font-size: 1.1rem;
+}
+
+/* Стили для общего контейнера */
+.answer-2 {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(255, 255, 238);
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+/* Стили для закрытых ячеек */
+table tbody tr td {
+	background-color: rgb(184, 252, 240);
+	width: 25px;
+	height: 25px;
+}
+
+/* Стили для открытых ячеек с миной */
+.mineCell {
+	background-image: url("../image/mine.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Стили для пустых ячеек */
+.emptyCell {
+	background-color: rgb(236, 236, 236);
+}
+
+/* Стили для ячеек, помеченных флагом  */
+.flagCell {
+	background-image: url("../image/flag.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Стили для счетчиков */
+.count {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.count div {
+	display: flex;
+	align-items: center;
+}
+
+/* Стили для кнопки "Начать игру заново" */
+.answer-2 button {
+	margin-top: 10px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: rgb(189, 255, 136);
+	font-weight: 700;
+}
+.answer-2 button:active {
+	background-color: rgb(255, 204, 204);
+	transition: all 0.2s;
+}
+.victoryOrLoss {
+	color: rgb(248, 0, 0);
+	font-weight: 900;
+	text-align: center;
+	height: 20px;
+}
